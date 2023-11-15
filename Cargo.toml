@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "wizard",
+    "step1",
+    "step2",
+    "step3",
+]
+
+resolver = "2"
+
+[workspace.dependencies]
+iced = { git = "https://github.com/iced-rs/iced.git", branch = "master", features = ["web-colors", "image", "debug", "advanced"]}
+
+log = "0.4"
+tracing = "0.1"
